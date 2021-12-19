@@ -1,0 +1,48 @@
+{
+  "name": "GOD-OP STYLIST TEXT",
+  "description": "STYLISH TEXT BOT MADE WITH LOVE BY ɢᴏᴅ-ᴏᴘ",
+  "keywords": [
+    "telegram",
+    "best",
+    "StylishText"
+  ],
+  "logo": "https://te.legra.ph/file/5f1cf8dce076ee7558b46.jpg",
+  "success_url": "https://t.me/GODOPBOY",
+  "website": "https://github.com/GODOP-ANKIT/STYLISH-TEXT",
+  "repository": "https://github.com/GODOP-ANKIT/STYLISH-TEXT",
+  "env": {
+    "WEBHOOK": {
+      "description": "Setting this to ANYTHING will enable webhooks when in env mode",
+      "value": "ANYTHING"
+    },
+    "BOT_TOKEN": {
+      "description": "Your bot token, as a string.",
+      "value": ""
+    },
+    "API_ID": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": "7847086"
+    },
+    "OWNER_ID": {
+      "description": "give your telegram user id here",
+      "value": "2127221861"
+    },
+    "API_HASH": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": "10ee3493b91fa1a69189e4830390a957"
+    }
+  },
+  "addons": [
+  ],
+  "buildpacks": [{
+    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+  }, {
+    "url": "heroku/python"
+  }],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
